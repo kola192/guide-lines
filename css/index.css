@@ -264,12 +264,20 @@ ul {
 Project
 ===============
 */
+html {
+  height: 100%;
+}
+
 main {
   min-height: 100vh;
 }
 
+.text {
+  /* line-height: 1.7em; */
+}
+
 .container {
-  max-width: calc(100% - 2.2rem);
+  max-width: calc(100% - 3rem);
   margin: 0 auto;
 }
 
@@ -308,19 +316,43 @@ main {
   color: var(--primary-800);
 }
 
+.fa-facebook-official {
+  color: #1877f2;
+}
+
+.fa-instagram {
+  color: #c32aa3;
+}
+
+.fa-youtube-play {
+  color: #ff0000;
+}
+
 .article {
   padding: 1rem 0;
 }
 
 .heading {
   font-size: 2rem;
+  font-weight: 600;
   margin-top: 3rem;
   color: var(--primary-800);
 }
+
+.sub-heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.heading4 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
 .demo-img {
   display: block;
   width: 300px;
-  margin: 2rem auto 0;
+  margin: 4rem auto 3rem;
 }
 
 .footer {
