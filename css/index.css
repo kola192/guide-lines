@@ -264,22 +264,116 @@ ul {
 Project
 ===============
 */
-
 main {
   min-height: 100vh;
 }
 
 .container {
-  max-width: calc(100% - 40px);
+  max-width: calc(100% - 2.2rem);
   margin: 0 auto;
 }
 
 .header {
-  padding: 1.2rem 0 0.8rem;
   background: var(--white);
   box-shadow: var(--shadow-2);
 }
 
+.header .container {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .logo img {
-  max-width: 150px;
+  max-width: 50px;
+  margin-left: -4px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-link {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  color: var(--primary-800);
+}
+
+.article {
+  padding: 1rem 0;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-top: 3rem;
+  color: var(--primary-800);
+}
+.demo-img {
+  display: block;
+  width: 300px;
+  margin: 2rem auto 0;
+}
+
+.footer {
+  padding-top: 1rem;
+  background: var(--primary-900);
+  text-align: center;
+  color: var(--white);
+}
+
+.footer .email {
+  color: var(--grey-400);
+}
+
+.footer .social-list {
+  justify-content: center;
+}
+
+.footer .social-link {
+  margin: 0;
+  padding: 1rem 0.5rem;
+  color: var(--primary-200);
+}
+
+.footer p {
+  max-width: 100%;
+  padding: 0.5rem;
+  background-color: #0a0921;
+  color: var(--grey-600);
+  font-size: 12px;
+}
+
+/* break points */
+
+@media screen and (min-width: 481px) {
+  .container {
+    max-width: calc(100% - 4.4rem);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .container {
+    max-width: calc(100% - 8.8rem);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .container {
+    max-width: calc(100% - 16rem);
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .container {
+    max-width: 1160px;
+  }
 }
