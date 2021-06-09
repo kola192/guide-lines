@@ -273,7 +273,8 @@ main {
 }
 
 .text {
-  /* line-height: 1.7em; */
+  line-height: 2em;
+  margin: 2rem 0 3rem;
 }
 
 .container {
